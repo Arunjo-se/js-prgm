@@ -2,7 +2,7 @@
     //1. class is a blueprint for creating objects    
 class Car {
   constructor(brand, model) { // constructor is a special method for creating and initializing an object created with a class
-    this.brand = brand;
+    this.brand = brand; // this keyword refers to the current object
     this.model = model;
   }
 }
