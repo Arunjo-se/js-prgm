@@ -7,13 +7,13 @@ const student =[
     {name: "Bob Brown", age: 21, marks: 92}
 ];
 
-const passStudent = student.filter((s) => s.marks > 87)
+const passStudent = student.filter((s) => s.marks > 87) // filter is used to filter the data based on condition, 
 console.log(passStudent); 
 
-const Uppernames = passStudent.map((s) => s.name.toUpperCase())
+const Uppernames = passStudent.map((s) => s.name.toUpperCase()) // map is used to transform the data, it returns a new array
 console.log(Uppernames);
 
 
-const totaScore = passStudent.reduce((total, s) => total + s.marks, 0);
+const totaScore = passStudent.reduce((total, s) => total + s.marks, 0); // reduce is used to reduce the array to a single value, in this case we are calculating the total marks of all students
 console.log(`Total Score: ${totaScore}`);
 
