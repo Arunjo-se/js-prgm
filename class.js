@@ -7,7 +7,7 @@ class Car {
   }
 }
 
-const car1 = new Car("Toyota", "Corolla");
+const car1 = new Car("Toyota", "Corolla"); //instance of the class. 'Toyota' and 'Corolla' are the arguments passed to the constructor
 console.log(car1.brand); // Toyota
 
 
