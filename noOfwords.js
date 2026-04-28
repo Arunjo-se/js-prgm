@@ -18,14 +18,15 @@ const wordCount = words.reduce((count) => count + 1, 0)
 console.log("wordCount: " + wordCount)  
 // ---------------------------------
 
-// find the no of 'is' in the string using filter(methiod 1)
-const isCountFilter = words.filter(word => word === 'is').length
+// find the no of 'is' in the string using filter(methiod 1)*
+const isCountFilter = str.split(' ').filter(word => word === 'is').length
 console.log("isCountFilter: " + isCountFilter)
+
 
 
 // ------------------------------------------------ 
  //find the no of 'is' in the string(methiod 2) using reduce
-const isCount = words.reduce((count, word) => {
+const isCount = str.split(' ').reduce((count, word) => {
     if (word === 'is') {    
         return count + 1
     }
@@ -35,11 +36,11 @@ const isCount = words.reduce((count, word) => {
 console.log("isCount: " + isCount)
 
 //------------------------------------------------
-// find the no of each word in the string using reduce
+// find the no of each word in the string using reduce*
 
-const result = str.split(' ').reduce((acc, word) => {
-  acc[word] = (acc[word] || 0) + 1;
-  return acc;
+const result = str.split(' ').reduce((a, b) => {
+  a[b] = (a[b] || 0) + 1;
+  return a;
 }, {});
 
 console.log(result);
